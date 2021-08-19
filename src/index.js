@@ -9,7 +9,7 @@ taskForm.addEventListener("submit", handleSubmit);
 
 // what to do with the form when it is submitted 
 function handleSubmit(event){
-  event.preventDefault(); 
+  event.preventDefault(); // prevent the default of autoloading
   console.log('the event value is:', event.value);
   const newTask = document.getElementById("new-task-description").value;
   // create elements with the form data
@@ -18,6 +18,7 @@ function handleSubmit(event){
   <li>
   ${newTask}
   </li>` 
+// create new task
 
 taskForm.reset(); // clears the values of the form elements for a better user experience 
 }
